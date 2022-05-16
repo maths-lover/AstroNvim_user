@@ -7,11 +7,12 @@ if status_ok then
 			null_ls.builtins.formatting.stylua,
 			null_ls.builtins.formatting.black,
 			null_ls.builtins.formatting.isort,
-			null_ls.builtins.formatting.prettier.with { extra_filetypes = { "rmd" } },
+			null_ls.builtins.formatting.prettier.with({ extra_filetypes = { "rmd" } }),
 			null_ls.builtins.formatting.shfmt,
 			null_ls.builtins.diagnostics.cue_fmt,
 			null_ls.builtins.diagnostics.shellcheck,
 			null_ls.builtins.diagnostics.cppcheck,
+			null_ls.builtins.formatting.rustfmt,
 		},
 		on_attach = function(client)
 			if client.resolved_capabilities.document_formatting then
