@@ -1,6 +1,7 @@
 return {
   servers = {
     "clangd",
+    "gopls",
     "cmake",
     "cssls",
     "html",
