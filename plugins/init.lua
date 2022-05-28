@@ -27,7 +27,7 @@ return {
   ["echasnovski/mini.nvim"] = {
     event = "VimEnter",
     config = function()
-      require "user.plugins.mini"()
+      require "user.plugins.mini" ()
     end,
   },
   ["ethanholz/nvim-lastplace"] = {
@@ -163,4 +163,5 @@ return {
   },
   ["wakatime/vim-wakatime"] = { event = "BufEnter" },
   ["ziontee113/syntax-tree-surfer"] = { module = "syntax-tree-surfer" },
+  ["glacambre/firenvim"] = {},
 }
