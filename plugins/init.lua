@@ -1,5 +1,6 @@
 return {
   ["declancm/cinnamon.nvim"] = { disable = true },
+  ["famiu/bufdelete.nvim"] = { disable = true },
   ["goolord/alpha-nvim"] = { disable = true },
   ["lukas-reineke/indent-blankline.nvim"] = { disable = true },
   ["max397574/better-escape.nvim"] = { disable = true },
@@ -9,7 +10,6 @@ return {
       require("nightfox").setup(require "user.plugins.nightfox")
     end,
   },
-  ["andymass/vim-matchup"] = { after = "nvim-treesitter" },
   ["danymat/neogen"] = {
     module = "neogen",
     cmd = "Neogen",
@@ -115,7 +115,6 @@ return {
       end
     end,
   },
-  ["skywind3000/asyncrun.vim"] = { cmd = "AsyncRun" },
   ["nvim-treesitter/nvim-treesitter-textobjects"] = { after = "nvim-treesitter" },
   ["nvim-telescope/telescope-bibtex.nvim"] = {
     after = "telescope.nvim",
@@ -162,6 +161,11 @@ return {
     end,
   },
   ["wakatime/vim-wakatime"] = { event = "BufEnter" },
-  ["ziontee113/syntax-tree-surfer"] = { module = "syntax-tree-surfer" },
+  ["ziontee113/syntax-tree-surfer"] = {
+    module = "syntax-tree-surfer",
+    config = function()
+      require("syntax-tree-surfer").setup(require "user.plugins.syntax-tree-surfer")
+    end,
+  },
   ["glacambre/firenvim"] = {},
 }

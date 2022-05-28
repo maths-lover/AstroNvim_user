@@ -28,9 +28,6 @@ return {
     "vim",
     "yaml",
   },
-  matchup = {
-    enable = true,
-  },
   textobjects = {
     select = {
       enable = true,
@@ -62,8 +59,6 @@ return {
         ["[X"] = "@class.outer",
       },
     },
-    swap = {
-      enable = false,
-    },
+    swap = { enable = false },
   },
 }
