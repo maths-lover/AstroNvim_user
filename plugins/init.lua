@@ -168,4 +168,9 @@ return {
     end,
   },
   ["glacambre/firenvim"] = {},
+  ["mileszs/ack.vim"] = {
+    config = function()
+      vim.g.ackprg = "ag --vimgrep"
+    end,
+  },
 }
