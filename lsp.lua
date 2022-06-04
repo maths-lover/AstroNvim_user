@@ -13,7 +13,7 @@ return {
     "tsserver",
     "yamlls",
   },
-  skip_setup = { "tsserver", "clangd" },
+  skip_setup = { "tsserver" },
   ["server-settings"] = {
     clangd = { capabilities = { offsetEncoding = "utf-8" } },
     sqls = {
