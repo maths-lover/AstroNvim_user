@@ -1,5 +1,5 @@
 return {
-  colorscheme = "duskfox",
+  colorscheme = "dawnfox",
   lsp = require "user.lsp",
   polish = function()
     vim.filetype.add {
