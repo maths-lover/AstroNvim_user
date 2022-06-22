@@ -58,7 +58,6 @@ return {
         B = { "<cmd>Telescope bibtex<cr>", "BibTeX" },
         c = { "<cmd>Telescope commands<cr>", "Commands" },
         e = { "<cmd>Telescope file_browser<cr>", "Explorer" },
-        F = { "<cmd>Telescope find_files hidden=true no_ignore=true<cr>", "All Files" },
         h = { "<cmd>Telescope oldfiles<cr>", "History" },
         k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
         m = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
@@ -178,18 +177,8 @@ return {
 
       s = {
         name = "Surf",
-        s = {
-          function()
-            require("syntax-tree-surfer").select()
-          end,
-          "Surf",
-        },
-        S = {
-          function()
-            require("syntax-tree-surfer").select_current_node()
-          end,
-          "Surf Node",
-        },
+        s = { "<cmd>STSSelectMasterNode<cr>", "Surf" },
+        S = { "<cmd>STSSelectCurrentNode<cr>", "Surf Node" },
       },
 
       n = {

@@ -1,4 +1,5 @@
 return {
+  updater = { skip_prompts = true },
   colorscheme = "dawnfox",
   lsp = require "user.lsp",
   polish = function()
@@ -8,6 +9,5 @@ return {
       },
     }
     require "user.autocmds"
-    require "user.mappings"
   end,
 }

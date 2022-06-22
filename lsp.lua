@@ -17,6 +17,15 @@ return {
   skip_setup = { "tsserver" },
   ["server-settings"] = {
     clangd = { capabilities = { offsetEncoding = "utf-8" } },
+    pyright = {
+      settings = {
+        python = {
+          analysis = {
+            typeCheckingMode = "on",
+          },
+        },
+      },
+    },
     sqls = {
       on_attach = function(client, bufnr)
         if client.name == "sqls" then
