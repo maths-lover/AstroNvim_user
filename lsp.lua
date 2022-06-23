@@ -3,7 +3,7 @@ return {
     "clangd",
     "cmake",
     "cssls",
-    "dartls",
+    "gopls",
     "html",
     "intelephense",
     "jsonls",
