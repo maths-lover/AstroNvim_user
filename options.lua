@@ -12,6 +12,6 @@ return {
     spellfile = "~/.config/nvim/lua/user/spell/en.utf-8.add",
     thesaurus = "~/.config/nvim/lua/user/spell/mthesaur.txt",
     wrap = true, -- soft wrap lines
-    guifont = "FiraCode Nerd Font:h16",
+    guifont = "GoMono Nerd Font:h15",
   },
 }
