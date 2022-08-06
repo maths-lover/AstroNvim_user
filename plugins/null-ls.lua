@@ -6,7 +6,7 @@ return {
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.black,
     null_ls.builtins.formatting.isort,
-    null_ls.builtins.formatting.prettier.with { extra_filetypes = { "rmd" } },
+    null_ls.builtins.formatting.prettierd.with { extra_filetypes = { "rmd" } },
     null_ls.builtins.formatting.shfmt,
     null_ls.builtins.diagnostics.cue_fmt,
     null_ls.builtins.diagnostics.shellcheck,
@@ -18,9 +18,7 @@ return {
       vim.api.nvim_create_autocmd("BufWritePre", {
         desc = "Auto format before save",
         pattern = "<buffer>",
-        callback = function()
-          vim.lsp.buf.formatting_sync()
-        end,
+        callback = function() vim.lsp.buf.formatting_sync() end,
       })
     end
   end,
