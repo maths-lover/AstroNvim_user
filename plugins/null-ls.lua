@@ -10,8 +10,8 @@ return {
     null_ls.builtins.formatting.shfmt,
     null_ls.builtins.diagnostics.cue_fmt,
     null_ls.builtins.diagnostics.shellcheck,
-			null_ls.builtins.diagnostics.cppcheck,
-			null_ls.builtins.formatting.rustfmt,
+    null_ls.builtins.diagnostics.cppcheck,
+    null_ls.builtins.formatting.rustfmt,
   },
   on_attach = function(client)
     if client.resolved_capabilities.document_formatting then
