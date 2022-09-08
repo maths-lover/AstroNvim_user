@@ -1,9 +1,11 @@
 return {
+  auto_update = true,
   ensure_installed = {
-    "shellcheck",
     "black",
+    "debugpy",
     "isort",
     "prettierd",
+    "shellcheck",
     "shfmt",
     "stylua",
   },
